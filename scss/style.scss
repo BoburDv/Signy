@@ -126,6 +126,11 @@ body{
         transition: all 0.4s;
         box-shadow: 0px 0px 5px #1064E5;
     }
+    .none button{
+        height: 27px;
+        background-color: transparent;
+        border: none;
+    }
 }
 footer{
     display: flex;
@@ -325,31 +330,124 @@ footer{
     .header{
     .none{
         display: block;
+        border: none;
+        background-color: transparent;
     }
     .blok{
         display: none;
     }
     }
+    footer{
+        margin-top: 50px;
+    }
 }
 @media screen and (max-width:700px){
+    .container{
+        padding: 0px 20px;
+        
+    }
     .header{
-        img{
-            width: 100px;
+        justify-content: space-between;
+        padding-top: 35px;
+
+        .none{
+            border: none;
+            background-color: transparent;
         }
     }
     .main{
+        .container:{
+            padding: 0px 0px 0px 20px;
+        }
+
         h3{
             font-size: 25px;
+            width: 223px;
             line-height: 26px;
-            width:223px;
-
+            margin-top: 30px;
+        }
+        span{
+            font-size: 18px;
         }
         h4{
             font-size: 18px;
-            width: ;
+            margin-top: 12px;
         }
-        .hero img{
-            height: 300px;
+        p{
+            font-size: 14px;
+            line-height: 18px;
+            margin: 8px 0px 37px;
+        }
+    }
+    .rek{
+        flex-direction: column;
+        justify-content: center;
+
+        .rek-flex{
+            gap: 33px;
+            width: 100%;
+            justify-content: center;
+            p{
+                width: 206px;
+            }
+        }
+    }
+    .comfort{
+        flex-direction: column;
+
+        .cs-btn{
+            justify-content: center;
+        }
+    }
+    .comfort-2{
+        flex-direction: column-reverse;
+
+        .btn-3{
+            justify-content: center;
+        }
+    }
+    .hero img{
+        height: 350px;
+    }
+    .comfort{
+        .overflow{
+            img{
+                width: 97%;
+                justify-content: center;
+            }
+        }
+    }
+}
+@media screen and (max-width:400px){
+    .main{
+        
+        .hero{
+            display: none;
+        }
+    }
+    .comfort{
+        .overflow{
+            img{
+                width: 280px;
+                justify-content: center;
+            }
+        }
+        p{
+            width: 90%;
+        }
+    }
+    .comfort-2{
+        .overflow{
+            img{
+                width: 280px;
+                justify-content: center;
+            }
+        }
+        p{
+            width: 90%;
+        }
+        .btn-4{
+            justify-content: center;
         }
     }
 }

@@ -126,6 +126,11 @@ body {
   transition: all 0.4s;
   box-shadow: 0px 0px 5px #1064E5;
 }
+.main .none button {
+  height: 27px;
+  background-color: transparent;
+  border: none;
+}
 
 footer {
   display: flex;
@@ -311,19 +316,100 @@ footer img:hover {
 @media screen and (max-width: 768px) {
   .header .none {
     display: block;
+    border: none;
+    background-color: transparent;
   }
   .header .blok {
     display: none;
   }
+  footer {
+    margin-top: 50px;
+  }
 }
 @media screen and (max-width: 700px) {
-  .header img {
-    width: 100px;
+  .container {
+    padding: 0px 20px;
+  }
+  .header {
+    justify-content: space-between;
+    padding-top: 35px;
+  }
+  .header .none {
+    border: none;
+    background-color: transparent;
+  }
+  .main {
+    .container-padding: 0px 0px 0px 20px;
   }
   .main h3 {
     font-size: 25px;
+    width: 223px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+  .main span {
+    font-size: 18px;
   }
   .main h4 {
     font-size: 18px;
+    margin-top: 12px;
+  }
+  .main p {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 8px 0px 37px;
+  }
+  .rek {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .rek .rek-flex {
+    gap: 33px;
+    width: 100%;
+    justify-content: center;
+  }
+  .rek .rek-flex p {
+    width: 206px;
+  }
+  .comfort {
+    flex-direction: column;
+  }
+  .comfort .cs-btn {
+    justify-content: center;
+  }
+  .comfort-2 {
+    flex-direction: column-reverse;
+  }
+  .comfort-2 .btn-3 {
+    justify-content: center;
+  }
+  .hero img {
+    height: 350px;
+  }
+  .comfort .overflow img {
+    width: 97%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main .hero {
+    display: none;
+  }
+  .comfort .overflow img {
+    width: 280px;
+    justify-content: center;
+  }
+  .comfort p {
+    width: 90%;
+  }
+  .comfort-2 .overflow img {
+    width: 280px;
+    justify-content: center;
+  }
+  .comfort-2 p {
+    width: 90%;
+  }
+  .comfort-2 .btn-4 {
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
